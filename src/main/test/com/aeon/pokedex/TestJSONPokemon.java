@@ -1,4 +1,4 @@
-package com.aeon.pokedex.utilities.test;
+package com.aeon.pokedex;
 
 import java.util.Iterator;
 import java.util.List;

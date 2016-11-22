@@ -11,7 +11,7 @@
 					id='${pokemon.number}' data-icon="arrow-r" data-iconpos="right" data-wrapperEls="div" data-theme="c">
 					<div class = "ui-btn-inner ui-li" >
 						<div class="ui-btn-text">
-							<a class ="ui-link-inherit" href="#">
+							<a class ="ui-link-inherit" href="${pokemon.number}/">
 								<img class="ui-li-thumb" src='images/pokemon/<c:out value="${pokemon.imageFileName}" />' />
 								<h2 class="ui-li-heading"><c:out value="${pokemon.name}" /></h2>
 								<p class="ui-li-desc">#<c:out value="${pokemon.number}" /></p>
