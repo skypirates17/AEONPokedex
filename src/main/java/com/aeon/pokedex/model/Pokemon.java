@@ -114,8 +114,7 @@ public class Pokemon {
 		return nextEvolutionRequirements;
 	}
 
-	public void setNextEvolutionRequirements(
-			NextEvolutionRequirements nextEvolutionRequirements) {
+	public void setNextEvolutionRequirements(NextEvolutionRequirements nextEvolutionRequirements) {
 		this.nextEvolutionRequirements = nextEvolutionRequirements;
 	}
 
@@ -159,22 +158,19 @@ public class Pokemon {
 		sb.append("], ");
 
 		sb.append("Weaknesses: [");
-		for (Iterator<String> iterator = weaknesses.iterator(); iterator
-				.hasNext();) {
+		for (Iterator<String> iterator = weaknesses.iterator(); iterator.hasNext();) {
 			sb.append(((String) iterator.next()) + ", ");
 		}
 		sb.append("], ");
 
 		sb.append("Fast Attack(s): [");
-		for (Iterator<String> iterator = fastAttacks.iterator(); iterator
-				.hasNext();) {
+		for (Iterator<String> iterator = fastAttacks.iterator(); iterator.hasNext();) {
 			sb.append(((String) iterator.next()) + ", ");
 		}
 		sb.append("], ");
 
 		sb.append("Special Attack(s): [");
-		for (Iterator<String> iterator = specialAttacks.iterator(); iterator
-				.hasNext();) {
+		for (Iterator<String> iterator = specialAttacks.iterator(); iterator.hasNext();) {
 			sb.append(((String) iterator.next()) + ", ");
 		}
 		sb.append("], ");
@@ -186,18 +182,15 @@ public class Pokemon {
 		sb.append("], ");
 
 		sb.append("Next evolution(s): [");
-		for (Iterator<NextEvolution> iterator = nextEvolution.iterator(); iterator
-				.hasNext();) {
+		for (Iterator<NextEvolution> iterator = nextEvolution.iterator(); iterator.hasNext();) {
 			NextEvolution newNextEvolution = (NextEvolution) iterator.next();
 			sb.append("{" + newNextEvolution.toString() + "}, ");
 		}
 		sb.append("], ");
 
 		sb.append("Previous evolution(s): [");
-		for (Iterator<PreviousEvolution> iterator = previousEvolution
-				.iterator(); iterator.hasNext();) {
-			PreviousEvolution newPreviousEvolution = (PreviousEvolution) iterator
-					.next();
+		for (Iterator<PreviousEvolution> iterator = previousEvolution.iterator(); iterator.hasNext();) {
+			PreviousEvolution newPreviousEvolution = (PreviousEvolution) iterator.next();
 			sb.append("{" + newPreviousEvolution.toString() + "}, ");
 		}
 		sb.append("]");
